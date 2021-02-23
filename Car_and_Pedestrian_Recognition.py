@@ -12,5 +12,7 @@ img = cv2.imread(car_img)
 # displaying image with the cars spotted
 cv2.imshow('Car Recognition', img)
 
+# Waits till any key is pressed to close python program
+cv2.waitKey()
 
 print('successful')

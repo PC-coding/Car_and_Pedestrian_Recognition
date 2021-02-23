@@ -9,6 +9,8 @@ car_detector = 'cars_haar_cascades.xml'
 # creating opencv image
 img = cv2.imread(car_img)
 
+# displaying image with the cars spotted
+cv2.imshow('Car Recognition', img)
 
 
 print('successful')

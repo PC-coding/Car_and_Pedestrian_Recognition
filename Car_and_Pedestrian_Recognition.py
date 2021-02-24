@@ -12,6 +12,9 @@ img = cv2.imread(car_img)
 # creating car recognition
 car_detector = cv2.CascadeClassifier(classifier)
 
+# converting image to grayscale
+grayscale = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+
 # displaying image with the cars spotted
 cv2.imshow('Car Recognition', img)
 

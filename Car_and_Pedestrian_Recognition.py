@@ -19,6 +19,10 @@ car_tracker = cv2.CascadeClassifier(classifier)
 car_detector = car_tracker.detectMultiScale(grayscale) 
 print(car_detector)
 
+# drawing boxes around cars that are detected
+for (x, y, w, h) in car_detector:
+    cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
+
 # displaying image with the cars spotted
 cv2.imshow('Car Recognition', img)
 

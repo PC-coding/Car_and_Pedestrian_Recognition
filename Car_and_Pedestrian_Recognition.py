@@ -9,6 +9,11 @@ classifier= 'cars_haar_cascades.xml'
 # creating opencv image
 img = cv2.imread(car_img)
 
+# code to read car movement in streets via tesla accident model video
+# run forever until vehicles stop
+while True:
+    
+
 # converting image to grayscale
 grayscale = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 

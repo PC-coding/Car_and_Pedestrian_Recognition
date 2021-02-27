@@ -12,7 +12,14 @@ img = cv2.imread(car_img)
 # code to read car movement in streets via tesla accident model video
 # run forever until vehicles stop
 while True:
-    
+
+    # read current frame
+    (read_successful, frame) = video.read()
+
+    # converting video to grayscale if read
+    if read_succesful:
+        grayscale_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+
 
 # converting image to grayscale
 grayscale = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

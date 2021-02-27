@@ -19,6 +19,8 @@ while True:
     # converting video to grayscale if read
     if read_succesful:
         grayscale_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    else:
+        break
 
 
 # converting image to grayscale

@@ -15,10 +15,10 @@ classifier= 'cars_haar_cascades.xml'
 while True:
 
     # read current frame
-    (read_successful, frame) = video.read()
+    (read_successful, frame) = car_video.read()
 
     # converting video to grayscale if read
-    if read_succesful:
+    if read_successful:
         grayscale_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
     else:
         break
@@ -27,7 +27,7 @@ while True:
     cv2.imshow('Car Recognition', grayscale_frame)
 
     # waits till any key is pressed to close python program
-    cv2.waitKey()
+    cv2.waitKey(1)
 
 # converting image to grayscale
 # grayscale = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)

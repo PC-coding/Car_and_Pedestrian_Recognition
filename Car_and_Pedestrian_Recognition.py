@@ -7,6 +7,9 @@ car_video = cv2.VideoCapture('tesla_car_crash.mov')
 # pre-trained car classifying data
 classifier= 'cars_haar_cascades.xml'
 
+# create car classifier
+car_tracker = cv2.CascadeClassifier(classifier)
+
 # creating opencv image
 # img = cv2.imread(car_img)
 

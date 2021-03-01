@@ -2,6 +2,7 @@ import cv2
 
 # car image
 car_img = 'car_traffic.jpg'
+car_video = cv2.VideoCapture('tesla_car_crash.mov')
 
 # pre-trained car classifying data
 classifier= 'cars_haar_cascades.xml'

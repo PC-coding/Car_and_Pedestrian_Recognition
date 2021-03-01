@@ -26,6 +26,10 @@ while True:
     else:
         break
 
+
+    # detecting cars in video
+    cars = car_tracker.detectMultiScale(grayscale_frame)
+    
     # displays images with cars spotted
     cv2.imshow('Car Recognition', grayscale_frame)
 

@@ -10,8 +10,6 @@ classifier= 'cars_haar_cascades.xml'
 # create car classifier
 car_tracker = cv2.CascadeClassifier(classifier)
 
-# creating opencv image
-# img = cv2.imread(car_img)
 
 # code to read car movement in streets via tesla accident model video
 # run forever until vehicles stop
@@ -27,7 +25,7 @@ while True:
         break
 
     # detecting cars in video
-    cars = car_tracker.detectMultiScale(grayscale_frame)
+    car_detector = car_tracker.detectMultiScale(grayscale_frame)
     print(cars)
 
     # drawing boxes around cars that are detected
@@ -39,22 +37,14 @@ while True:
 
     # waits till any key is pressed to close python program
     cv2.waitKey(1)
+    
+# creating opencv image
+# img = cv2.imread(car_img)
 
 # converting image to grayscale
 # grayscale = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 
-# creating car recognition
-# car_tracker = cv2.CascadeClassifier(classifier)
-
-# car detection
-# car_detector = car_tracker.detectMultiScale(grayscale) 
-# print(car_detector)
-
-
 # displaying image with the cars spotted
 # cv2.imshow('Car Recognition', img)
-
-# Waits till any key is pressed to close python program
-# cv2.waitKey()
 
 print('successful')

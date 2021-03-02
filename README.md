@@ -1,4 +1,10 @@
 <h1>Car and Pedestrian Recongition</h1>
+<p>
+Car and pedestrian detection app created using Python and the OpenCV library.</br>
+Allows users to feed a image or video through the app, and the pre-trained data with</br>
+haar cascades will detect cars and pedestrians, displaying rectangular red boxes</br> 
+around each vehicle and person.
+</p>
 
 # What I learned
 - Introductions to Artificial Intelligence + Machine Learning using Python

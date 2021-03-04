@@ -75,3 +75,8 @@ while True:
 
     # detect pedestrians
     pedestrians = pedestrian_track.detectMultiScale(grayscale_frame)
+
+    # draw rectangular boxes around pedestrians
+    for (x, y, w, h) in pedestrians:
+        cv2.rectangle(frame, (x,y), (x+w, y+h), (0, 0, 255), 2)
+        

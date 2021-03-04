@@ -60,3 +60,9 @@ pedestrian_data = 'pedestrian_haar_cascade.xml'
 
 # creating pedestrian classifier
 pedestrian_track = cv2.CascadeClassifier('pedestrian_haar_cascade.xml')
+
+# run forever until pedestrian doesn't show up
+while True:
+
+    # read the current frame
+    (read_successful, frame) = video.read()

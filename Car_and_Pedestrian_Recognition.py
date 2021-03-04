@@ -66,3 +66,9 @@ while True:
 
     # read the current frame
     (read_successful, frame) = video.read()
+
+    # conversion to grayscale
+    if read_successful:
+        grayscale_frame = cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+    else:
+        break

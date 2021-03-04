@@ -56,4 +56,7 @@ print('successful')
 ## Pedstrian Recognition
 
 # pre-trained data for pedestrian recognition
-pedestrian_data = cv2.CascadeClassifier('pedestrian_haar_cascade.xml')
+pedestrian_data = 'pedestrian_haar_cascade.xml'
+
+# creating pedestrian classifier
+pedestrian_track = cv2.CascadeClassifier('pedestrian_haar_cascade.xml')

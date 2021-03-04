@@ -1,5 +1,8 @@
 import cv2
 
+
+## Car Recognition 
+
 # car image
 car_img = 'car_traffic.jpg'
 car_video = cv2.VideoCapture('tesla_car_crash.mov')
@@ -37,7 +40,7 @@ while True:
 
     # waits till any key is pressed to close python program
     cv2.waitKey(1)
-    
+
 # creating opencv image
 # img = cv2.imread(car_img)
 
@@ -48,3 +51,9 @@ while True:
 # cv2.imshow('Car Recognition', img)
 
 print('successful')
+
+
+## Pedstrian Recognition
+
+# pre-trained data for pedestrian recognition
+pedestrian_data = cv2.CascadeClassifier('pedestrian_haar_cascade.xml')

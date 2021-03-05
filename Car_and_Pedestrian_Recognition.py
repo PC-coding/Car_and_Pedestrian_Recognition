@@ -89,3 +89,6 @@ while True:
     # stop is Q key is pressed
     if key == 81 or key == 113:
         break
+    
+    # release video capture
+    video.release()

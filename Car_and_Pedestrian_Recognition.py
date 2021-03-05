@@ -85,4 +85,7 @@ while True:
 
     # listens for 1ms to check if any key was pressed, then move on
     key = cv2.waitKey(1)
-    
+
+    # stop is Q key is pressed
+    if key == 81 or key == 113:
+        break

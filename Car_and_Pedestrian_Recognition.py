@@ -82,3 +82,7 @@ while True:
 
     # displays image with pedestrians spotted
     cv2.imshow('Pedestrian Recognition', frame)
+
+    # listens for 1ms to check if any key was pressed, then move on
+    key = cv2.waitKey(1)
+    

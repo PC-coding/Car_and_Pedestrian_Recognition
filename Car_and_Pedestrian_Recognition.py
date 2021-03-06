@@ -1,8 +1,5 @@
 import cv2
 
-
-## Car Recognition 
-
 # car image
 car_img = 'car_traffic.jpg'
 car_video = cv2.VideoCapture('tesla_car_crash.mov')
@@ -48,13 +45,13 @@ while True:
     # waits till any key is pressed to close python program
     cv2.waitKey(1)
 
-# creating opencv image
-# img = cv2.imread(car_img)
+    # listens for 1ms to check if any key was pressed, then move on
+    key = cv2.waitKey(1)
 
-# converting image to grayscale
-# grayscale = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-
-# displaying image with the cars spotted
-# cv2.imshow('Car Recognition', img)
-
+    # stop is Q key is pressed
+    if key == 81 or key == 113:
+        break
+    
+    # release video capture
+    car_video.release()
 print('successful')
